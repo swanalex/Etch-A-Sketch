@@ -3,6 +3,8 @@ for (let i = 1; i<=256; i++) {
     const container = document.querySelector('#container');
     div.classList.add('gridDiv')
     container.appendChild(div);
+    
+    div.onmouseover = () => div.style.backgroundColor = 'red';
 
     if (i%16 === 0) {
         const div = document.createElement('div');
@@ -10,3 +12,7 @@ for (let i = 1; i<=256; i++) {
         container.appendChild(div);
     }
 }
+
+const newGrid = document.querySelector('#newGrid');
+
+
