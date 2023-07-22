@@ -23,4 +23,10 @@ for (let i = 1; i<=board_size; i++) {
 
 const newGrid = document.querySelector('#newGrid');
 
-
+function enterGridSize() {
+    let size = prompt("Please enter a new size for the grid. Max is 64");
+    if (size != null) {
+        boxes_per_row = size;
+        location.reload();
+    }
+}
