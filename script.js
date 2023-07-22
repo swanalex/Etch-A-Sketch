@@ -1,8 +1,8 @@
 
-let boxes_per_row = 16;
+let boxes_per_row = 64;
 let board_size = boxes_per_row**2;
-let px_width = 25;
-let px_height = 25;
+let px_width = 500/boxes_per_row;
+let px_height = 500/boxes_per_row;
 
 for (let i = 1; i<=board_size; i++) {
     const div = document.createElement('div');
