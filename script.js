@@ -1,5 +1,5 @@
 
-let boxes_per_row = 64;
+let boxes_per_row = 10;
 let board_size = boxes_per_row**2;
 let px_width = 500/boxes_per_row;
 let px_height = 500/boxes_per_row;
@@ -29,4 +29,8 @@ function enterGridSize() {
         boxes_per_row = size;
         location.reload();
     }
+}
+
+function resetGrid() {
+    location.reload();
 }
