@@ -3,10 +3,6 @@
 // createGrid(boxes_per_row);
 
 
-//let board_size = boxes_per_row**2;
-//let px_width = 500/boxes_per_row;
-//let px_height = 500/boxes_per_row;
-
 
 function createGrid(boxes_per_row) {
 
@@ -45,7 +41,7 @@ function changeGridSize() {
     while (container.firstChild) {
         container.removeChild(container.lastChild);
     }
-    // new prompt which calls function with new grid size
+    // new prompt which calls createGrid() function with new grid size
     let size = prompt("Please enter a new size for the grid. Max is 64");
     if (size != null) {
         createGrid(size);
@@ -57,8 +53,4 @@ function resetGrid() {
     while (container.firstChild) {
         container.removeChild(container.lastChild);
     }
-
-
-
-    //location.reload();
 }
